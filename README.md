@@ -8,8 +8,11 @@ git add .
 git commit -m "first commit"
 git remote add origin https://github.com/wangbinwww/VueCLI.git
 git push -u origin master
-
+//loader组件
 cnpm install -D less-loader less
+//自动化导入组件
+ cnpm install -D style-resources-loader
+
 
 npm install
 ```
