@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="欢迎使用Vue.js App" />
+    <h1 class="title">less测试</h1>
   </div>
 </template>
 
@@ -14,3 +15,13 @@ export default {
   }
 };
 </script>
+
+<style lang="less">
+.title {
+  color: @primary-color;
+  font-size: @normal-size;
+}
+.btn_enter {
+  color: @primary-color;
+}
+</style>

@@ -3,14 +3,14 @@
     <div id="nav">
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
-      <div class="title">Hello 如何处理css相关内容</div>
-      <button class="btn_enter">进入课程</button>
     </div>
     <router-view />
+    <div class="title">Hello 如何处理css相关内容</div>
+    <button class="btn_enter">进入课程</button>
   </div>
 </template>
 
-<style lang="less">
+<style lang="scss">
 //lang="less"样式预处理
 
 //less处理,先安装less 用于全局颜色定义
@@ -25,9 +25,10 @@
 //需要安装 style-resources-loader
 
 .title {
-  color: @primary-color;
+  color: $primary-color;
+  font-size: $normal-size;
 }
 .btn_enter {
-  color: @primary-color;
+  color: $primary-color;
 }
 </style>
